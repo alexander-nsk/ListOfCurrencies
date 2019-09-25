@@ -17,8 +17,8 @@ class CurrenciesApplication : Application() {
     }
 
     companion object {
-        private var INSTANCE: CurrenciesApplication? = null
+        private lateinit var INSTANCE: CurrenciesApplication
         @JvmStatic
-        fun get(): CurrenciesApplication = INSTANCE!!
+        fun get(): CurrenciesApplication = INSTANCE
     }
 }
